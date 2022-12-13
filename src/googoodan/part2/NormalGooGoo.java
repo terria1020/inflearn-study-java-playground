@@ -8,20 +8,26 @@ public class NormalGooGoo implements Study {
     @Override
     public void main(String[] args) {
 
+        int i = 1;
+
         //입력 및 출력
-        System.out.println("구구단 중 출력할 단 수는: ");
-        Scanner sc = new Scanner(System.in);
+        //System.out.println("구구단 중 출력할 단 수는: ");
+        //Scanner sc = new Scanner(System.in);
 
-        int number = sc.nextInt();
+        //int number = sc.nextInt();
+        int number = 6;
 
-        System.out.println(number + " * 1 = " + (number * 1));
-        System.out.println(number + " * 2 = " + (number * 2));
-        System.out.println(number + " * 3 = " + (number * 3));
-        System.out.println(number + " * 4 = " + (number * 4));
-        System.out.println(number + " * 5 = " + (number * 5));
-        System.out.println(number + " * 6 = " + (number * 6));
-        System.out.println(number + " * 7 = " + (number * 7));
-        System.out.println(number + " * 8 = " + (number * 8));
-        System.out.println(number + " * 9 = " + (number * 9));
+        //6단, 반복문의 사용
+        while (i < 10) {
+            System.out.println(number + " * " + i + " = " + (number * i));
+            i++;
+        }
+
+        number = 7;
+
+        //7단
+        for (i = 1; i < 10; i++) {
+            System.out.println(number + " * " + i + " = " + (number * i));
+        }
     }
 }
